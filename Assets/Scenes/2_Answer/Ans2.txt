@@ -1,0 +1,2 @@
+【要点】派生クラスからは、privateな_playerにはアクセスできません。
+【備考】EnemyBase_Ans.csと、Boss_Ans.csを見てください。
