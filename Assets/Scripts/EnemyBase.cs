@@ -11,6 +11,8 @@ public class EnemyBase : MonoBehaviour
     protected GameObject _player;
 
     [SerializeField] float howFarToInstantiateBullets = 0.5f;
+
+    //【Step5】publicにしないと外部クラスから呼べないので、protected→publicに
     protected virtual void Attack() {
         //生成準備
         var pos = transform.position;

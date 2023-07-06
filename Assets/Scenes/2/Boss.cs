@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Boss : EnemyBase
 {
+    //【Step4】publicにしないと外部クラスから呼べないので、protected→publicに
+    //Step5はEnemyBase.csへ
     protected override void Attack() {
         base.Attack();
     }

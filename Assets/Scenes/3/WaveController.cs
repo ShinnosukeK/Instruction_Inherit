@@ -7,4 +7,22 @@ public class WaveController : MonoBehaviour
     //ヒエラルキーに存在する敵オブジェクト（ボス含む）を
     //リスト化し、BossならBoss専用のAttack、ふつうのEnemyBaseなら
     //EnemyBase専用のAttackを実行させるWaveを作れないでしょうか？
+
+    //【Step1】EnemyBase型の配列enemyScriptsを定義
+
+
+
+    void Start() {
+        //【Step2】enemyScriptsに対して、FindObjectsOfTypeメソッドを用い、EnemyBaseスクリプトを
+        //持ったオブジェクトの配列を代入する
+
+    }
+
+    void Update() {
+        //【Step3】enemyScriptsがもつAttack関数を実行させる。ただし、
+        //全体を「スペースキーが押されたら」のif文で一旦くくり、
+        //スペースが押されたら全エネミーが弾を打ってくるようなDebug仕様にすること
+        //Step4はBoss.csへ
+  
+    }
 }

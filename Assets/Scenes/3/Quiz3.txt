@@ -1,0 +1,3 @@
+【問題】WaveControllerという空オブジェクトが配置されていて、WaveControllerという
+スクリプトがついています。この実装を追加し、エネミーを検索してBossならBoss専用のAttack（つまりスピードが速い）、
+EnemyBaseならEnemyBase専用のAttackを実行するようにしてください。
