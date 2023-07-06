@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 160264648}
   - component: {fileID: 160264647}
   - component: {fileID: 160264646}
-  - component: {fileID: 160264645}
+  - component: {fileID: 160264650}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -143,20 +143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &160264645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 160264644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f2425fba106a0b428093997ffaea364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 2687724454992809775, guid: 8da5f7242e54fac48ae0232dcee49a07, type: 3}
-  howFarToInstantiateBullets: 0.5
 --- !u!135 &160264646
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -235,6 +221,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &160264650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160264644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1958f495e116174f9e66d4cb254386e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 2687724454992809775, guid: 8da5f7242e54fac48ae0232dcee49a07, type: 3}
+  howFarToInstantiateBullets: 0.5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 1054310989}
   - component: {fileID: 1054310988}
   - component: {fileID: 1054310987}
-  - component: {fileID: 1054310986}
+  - component: {fileID: 1054310991}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -433,20 +433,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1054310986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054310985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5c3f9539bc6e7a428ab17757e891fa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 2687724454992809775, guid: 8da5f7242e54fac48ae0232dcee49a07, type: 3}
-  howFarToInstantiateBullets: 0.5
 --- !u!135 &1054310987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -525,6 +511,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054310991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054310985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5bfc8e0ed6b3fd41af4c05e106ccd25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 2687724454992809775, guid: 8da5f7242e54fac48ae0232dcee49a07, type: 3}
+  howFarToInstantiateBullets: 0.5
 --- !u!1 &1301577553
 GameObject:
   m_ObjectHideFlags: 0
