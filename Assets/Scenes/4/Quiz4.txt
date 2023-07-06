@@ -1,33 +1,6 @@
 抽象化（abstract）の概念を掴むための練習です．
 まずはCreature.csをみて，Step1から順に指示通りに作ってみてください．
 
-//【Step4】基底クラスのDamageメソッドがabstractになってしまったので，
-// 派生クラスであるHumanクラスでは，必ずDamageメソッドをoverrideする
-// 必要が出てくるため，下のようにエラーが出ます．（カーソルを合わせ，エラーを一度は見ること）
-public class Human : Creature
-{
-    //【Step5】フィールドにint型の_hp, _atk（攻撃力）, _def（防御力）を定義してください
-    int _hp;
-    int _atk;
-    int _def;
-
-    //【Step6】ここでDamage関数をoverrideし，
-    // 内部実装は，受け取ったatkから_def（防御力）を引いたものを，_hpから引くようにしよう．
-    // ただし，atkよりも_defが上回る場合は，ダメージ量を0にしよう．
-    public override void Damage(int atk)
-    {
-        _hp -= (atk > _def ? atk - _def : 0);
-    }
-}
 
 
 
-//【Step1】クラスを抽象化（abstract）してください．
-public abstract class Creature : MonoBehaviour
-{
-    //【Step2】Damageは生き物ならだれでも受けそうなので，派生クラスで必ずoverrideして
-    //詳細な実装を書いてもらうためにも，抽象化（abstract）してください．
-    public abstract void Damage(int atk);
-    //【Step3】メソッドをabstractしてしまうと，body（本体）を書くことは許されないので，
-    // 上記Damageメソッドの{}を消して，...Damage();と終えましょう．
-}
