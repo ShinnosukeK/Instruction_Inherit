@@ -1,2 +1,3 @@
 【要点】派生クラスからは、privateな_playerにはアクセスできません。
 【備考】EnemyBase_Ans.csと、Boss_Ans.csを見てください。
+理解し終えたら、【Quiz3】のコミットまで進め、3.sceneを開いてください。
