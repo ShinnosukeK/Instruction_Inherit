@@ -8,7 +8,7 @@ public class EnemyBase : MonoBehaviour
     protected int _atk;
     protected float _bulletSpeed = 2.0f;
     [SerializeField] GameObject _bulletPrefab;
-    GameObject _player;
+    protected GameObject _player;
 
     [SerializeField] float howFarToInstantiateBullets = 0.5f;
     protected virtual void Attack() {
