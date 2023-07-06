@@ -13,7 +13,7 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] float howFarToInstantiateBullets = 0.5f;
 
     //【Step5】publicにしないと外部クラスから呼べないので、protected→publicに
-    protected virtual void Attack() {
+    public virtual void Attack() {
         //生成準備
         var pos = transform.position;
         var targetPos = _player.transform.position;
@@ -25,11 +25,11 @@ public class EnemyBase : MonoBehaviour
         var go = Instantiate(_bulletPrefab, instantiatePos, rot);
 
         //移動
-        var rb = go.GetComponent<Rigidbody>();        
+        var rb = go.GetComponent<Rigidbody>();
         rb.velocity = _bulletSpeed * dir;
     }
     void Start() {
         _player = GameObject.Find("Player");
-        InvokeRepeating("Attack",0.0f, 0.5f);    
+        InvokeRepeating("Attack", 0.0f, 0.5f);
     }
 }
