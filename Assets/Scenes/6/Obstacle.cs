@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //【Step5】ここでもIDamageableを継承しよう
-public class Obstacle : MonoBehaviour
+public class Obstacle : MonoBehaviour, IDamageable
 {
     //【Step6】もしかすると，IDamageable側に_hpとか共通で定義しておけば
     // 継承先であるPlayerとかObstacle側でも使えるし，まとめておこうかな...
@@ -15,12 +15,25 @@ public class Obstacle : MonoBehaviour
 
     //【Step7】Damageメソッドの実装を，atkの2倍分だけ_hpから引くようにしよう．
     // もちろん，_hpは新しくフィールドに定義すること．
- 
+    int _hp;
+    public void Damage(int atk)
+    {
+        _hp -= 2 * atk;
+        Debug.Log("障害物のHP:" + _hp);
+        CheckDead();
+    }
 
     //【Step8】ついでにStart内で_hpを10で初期化してください．また，
     // Damageメソッド内の最後で，
     // ①自身の_hpを出力させ，
     // ②CheckDeadメソッドを定義し，_hpが負になっていたら
     // 自分自身をDestroyするようにしてみてください．
-
+    void Start()
+    {
+        _hp = 10;
+    }
+    void CheckDead()
+    {
+        if (_hp < 0) Destroy(gameObject);
+    }
 }

@@ -285,6 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65cb3726bb2f0ee46a3bbe41f0b689ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerScript: {fileID: 304803317}
+  obstacleScript: {fileID: 1907295740}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
