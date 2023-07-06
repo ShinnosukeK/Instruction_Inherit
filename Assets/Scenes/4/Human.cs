@@ -9,8 +9,15 @@ using UnityEngine;
 public class Human : Creature
 {
     //yStep5zƒtƒB[ƒ‹ƒh‚ÉintŒ^‚Ì_hp, _atkiUŒ‚—Íj, _defi–hŒä—Íj‚ğ’è‹`‚µ‚Ä‚­‚¾‚³‚¢
+    int _hp;
+    int _atk;
+    int _def;
 
     //yStep6z‚±‚±‚ÅDamageŠÖ”‚ğoverride‚µC
     // “à•”À‘•‚ÍCó‚¯æ‚Á‚½atk‚©‚ç_defi–hŒä—Íj‚ğˆø‚¢‚½‚à‚Ì‚ğC_hp‚©‚çˆø‚­‚æ‚¤‚É‚µ‚æ‚¤D
     // ‚½‚¾‚µCatk‚æ‚è‚à_def‚ªã‰ñ‚éê‡‚ÍCƒ_ƒ[ƒW—Ê‚ğ0‚É‚µ‚æ‚¤D
+    public override void Damage(int atk)
+    {
+        _hp -= (atk > _def ? atk - _def : 0);
+    }
 }
